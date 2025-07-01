@@ -1,9 +1,7 @@
 package MavenDemo;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 import MavenDemo.TestComponent.BaseTest;
 import MavenDemo.pageobjects.CartPage;
 import MavenDemo.pageobjects.LandingPage;
@@ -18,7 +16,7 @@ public class endToEnd extends BaseTest{
 	public void entToEndTest() throws IOException {
 		String myProd = "ADIDAS ORIGINAL";
 		
-		//LandingPage lpage = launchApplication();
+		LandingPage lpage = launchApplication();
 		
 		//LandingPage lpage = new LandingPage(driver); //Creating object of a page object model class and passing driver as argument
 		//lpage.gotoWeb();
@@ -33,7 +31,7 @@ public class endToEnd extends BaseTest{
 		//CartPage cartPage = new CartPage(driver);
 		
 		boolean match = cartPage.verifyProductDisplay(myProd);
-		AssertJUnit.assertTrue(match);
+		Assert.assertTrue(match);
 		
 		Payment payment = cartPage.clickCheckout();
 		
@@ -42,7 +40,7 @@ public class endToEnd extends BaseTest{
 		payment.placeOrder();
 		String confirmMessage = payment.getMessage();
 		System.out.println(confirmMessage);
-		AssertJUnit.assertTrue(confirmMessage.equalsIgnoreCase("Thankyou for the order."));
+		Assert.assertTrue(confirmMessage.equalsIgnoreCase("Thankyou for the order."));
 
 		//driver.close();
 	}
