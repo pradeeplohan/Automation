@@ -25,7 +25,8 @@ public class BaseTest {
 	public WebDriver inilizeDriver() throws IOException {
 		
 		Properties prop = new Properties();
-		FileInputStream inStrm = new FileInputStream(System.getProperty("user.dir")+"//src//main//java//MavenDemo//resources//GlobalData.properties");
+		FileInputStream inStrm = new FileInputStream(System.getProperty("user.dir")
+				+"//src//main//java//MavenDemo//resources//GlobalData.properties");
 		prop.load(inStrm);
 		String browserName = prop.getProperty("browser");
 		
