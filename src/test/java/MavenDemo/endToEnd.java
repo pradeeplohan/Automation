@@ -42,7 +42,8 @@ public class endToEnd extends BaseTest{
 		System.out.println(confirmMessage);
 		Assert.assertTrue(confirmMessage.equalsIgnoreCase("Thankyou for the order."));
 
-		//driver.close();
+		System.out.println("CiCD Pipeline is working fine");
+		driver.close();
 	}
 
 }
