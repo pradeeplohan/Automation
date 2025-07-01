@@ -156,7 +156,7 @@
                   <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;MavenDemo.pageobjects.LandingPage.loginWebsite(String, String)&quot; because &quot;this.lpage&quot; is null
 	at MavenDemo.endToEnd.entToEndTest(endToEnd.java:25)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -200,8 +200,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;MavenDemo.LoginErrorValidation&quot;/&gt;
       &lt;class name=&quot;MavenDemo.endToEnd&quot;/&gt;
@@ -246,26 +246,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginWithIncorectEmail')
+data.setCell(0, 1, 'loginWithIncorectEmailAndPassword')
 data.setCell(0, 2, 'MavenDemo.LoginErrorValidation')
-data.setCell(0, 3, 800);
+data.setCell(0, 3, 817);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginWithIncorectPassword')
+data.setCell(1, 1, 'loginWithIncorectEmail')
 data.setCell(1, 2, 'MavenDemo.LoginErrorValidation')
-data.setCell(1, 3, 786);
+data.setCell(1, 3, 809);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginWithIncorectEmailAndPassword')
+data.setCell(2, 1, 'loginWithIncorectPassword')
 data.setCell(2, 2, 'MavenDemo.LoginErrorValidation')
-data.setCell(2, 3, 304);
+data.setCell(2, 3, 799);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'entToEndTest')
 data.setCell(3, 2, 'MavenDemo.endToEnd')
-data.setCell(3, 3, 2);
+data.setCell(3, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -286,9 +286,9 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">MavenDemo.endToEnd</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">launchApplication</span>
-                <br/>
                 <span class="ignored-method-name">closeTab</span>
+                <br/>
+                <span class="ignored-method-name">launchApplication</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -307,15 +307,15 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginWithIncorectEmail</span>
-                <span class="method-start">3211 ms</span>
+                <span class="method-start">3657 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginWithIncorectEmailAndPassword</span>
-                <span class="method-start">4013 ms</span>
+                <span class="method-start">4468 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginWithIncorectPassword</span>
-                <span class="method-start">4319 ms</span>
+                <span class="method-start">5286 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -324,14 +324,14 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">entToEndTest</span>
-                <span class="method-start">5107 ms</span>
+                <span class="method-start">6088 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">MavenDemo.LoginErrorValidation</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeTab</span>
-                <span class="method-start">5111 ms</span>
+                <span class="method-start">6092 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

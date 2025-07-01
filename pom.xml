@@ -16,18 +16,6 @@
     <maven.compiler.release>17</maven.compiler.release>
   </properties>
 
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.junit</groupId>
-        <artifactId>junit-bom</artifactId>
-        <version>5.11.0</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-
   <dependencies>
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
@@ -51,11 +39,8 @@
     <version>5.9.2</version>
 </dependency>
 
-  	<dependency>
-  		<groupId>MyProject</groupId>
-  		<artifactId>Introductions</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
+ 
+  	
   </dependencies>
   
   <profiles>
@@ -63,7 +48,7 @@
   		<id>Regression</id>
   		
   		   <build>
-    <pluginManagement>
+    
       <plugins>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -76,7 +61,7 @@
           </configuration>
         </plugin>
         </plugins>
-        </pluginManagement>
+        
         </build>
         
   	</profile>

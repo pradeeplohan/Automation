@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-01T13:16:19 IST" name="Suite" finished-at="2025-07-01T13:16:24 IST" duration-ms="5199">
+  <suite started-at="2025-07-01T13:25:34 IST" name="Suite" finished-at="2025-07-01T13:25:40 IST" duration-ms="6214">
     <groups>
     </groups>
-    <test started-at="2025-07-01T13:16:19 IST" name="Test" finished-at="2025-07-01T13:16:24 IST" duration-ms="5199">
+    <test started-at="2025-07-01T13:25:34 IST" name="Test" finished-at="2025-07-01T13:25:40 IST" duration-ms="6214">
       <class name="MavenDemo.endToEnd">
-        <test-method signature="entToEndTest()[pri:0, instance:MavenDemo.endToEnd@a1153bc]" started-at="2025-07-01T13:16:24 IST" name="entToEndTest" finished-at="2025-07-01T13:16:24 IST" duration-ms="2" status="FAIL">
+        <test-method signature="entToEndTest()[pri:0, instance:MavenDemo.endToEnd@39529185]" started-at="2025-07-01T13:25:40 IST" name="entToEndTest" finished-at="2025-07-01T13:25:40 IST" duration-ms="1" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "MavenDemo.pageobjects.LandingPage.loginWebsite(String, String)" because "this.lpage" is null]]>
@@ -38,9 +38,13 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
@@ -49,23 +53,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- entToEndTest -->
       </class> <!-- MavenDemo.endToEnd -->
       <class name="MavenDemo.LoginErrorValidation">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MavenDemo.LoginErrorValidation@4d5d943d]" started-at="2025-07-01T13:16:19 IST" name="launchApplication" finished-at="2025-07-01T13:16:22 IST" duration-ms="3201" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MavenDemo.LoginErrorValidation@41e36e46]" started-at="2025-07-01T13:25:34 IST" name="launchApplication" finished-at="2025-07-01T13:25:38 IST" duration-ms="3646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="loginWithIncorectEmail()[pri:0, instance:MavenDemo.LoginErrorValidation@4d5d943d]" started-at="2025-07-01T13:16:22 IST" name="loginWithIncorectEmail" finished-at="2025-07-01T13:16:23 IST" duration-ms="800" status="PASS">
+        <test-method signature="loginWithIncorectEmail()[pri:0, instance:MavenDemo.LoginErrorValidation@41e36e46]" started-at="2025-07-01T13:25:38 IST" name="loginWithIncorectEmail" finished-at="2025-07-01T13:25:39 IST" duration-ms="809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithIncorectEmail -->
-        <test-method signature="loginWithIncorectEmailAndPassword()[pri:0, instance:MavenDemo.LoginErrorValidation@4d5d943d]" started-at="2025-07-01T13:16:23 IST" name="loginWithIncorectEmailAndPassword" finished-at="2025-07-01T13:16:23 IST" duration-ms="304" status="PASS">
+        <test-method signature="loginWithIncorectEmailAndPassword()[pri:0, instance:MavenDemo.LoginErrorValidation@41e36e46]" started-at="2025-07-01T13:25:39 IST" name="loginWithIncorectEmailAndPassword" finished-at="2025-07-01T13:25:40 IST" duration-ms="817" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithIncorectEmailAndPassword -->
-        <test-method signature="loginWithIncorectPassword()[pri:0, instance:MavenDemo.LoginErrorValidation@4d5d943d]" started-at="2025-07-01T13:16:23 IST" name="loginWithIncorectPassword" finished-at="2025-07-01T13:16:24 IST" duration-ms="786" status="PASS">
+        <test-method signature="loginWithIncorectPassword()[pri:0, instance:MavenDemo.LoginErrorValidation@41e36e46]" started-at="2025-07-01T13:25:40 IST" name="loginWithIncorectPassword" finished-at="2025-07-01T13:25:40 IST" duration-ms="799" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithIncorectPassword -->
-        <test-method is-config="true" signature="closeTab()[pri:0, instance:MavenDemo.LoginErrorValidation@4d5d943d]" started-at="2025-07-01T13:16:24 IST" name="closeTab" finished-at="2025-07-01T13:16:24 IST" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="closeTab()[pri:0, instance:MavenDemo.LoginErrorValidation@41e36e46]" started-at="2025-07-01T13:25:40 IST" name="closeTab" finished-at="2025-07-01T13:25:40 IST" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTab -->
