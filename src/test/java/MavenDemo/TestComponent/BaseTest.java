@@ -44,6 +44,7 @@ public class BaseTest {
 		
 		else if (browserName.equalsIgnoreCase("safari"))
 		{
+			//WebDriverManager.safaridriver().setup();
 			driver = new SafariDriver();
 		
 	    }

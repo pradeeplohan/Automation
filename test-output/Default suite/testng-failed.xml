@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MavenDemo.LoginErrorValidation">
+      <class name="MavenDemo.endToEnd">
         <methods>
+          <include name="entToEndTest"/>
           <include name="launchApplication"/>
-          <include name="loginWithIncorectEmailAndPassword"/>
           <include name="closeTab"/>
         </methods>
-      </class> <!-- MavenDemo.LoginErrorValidation -->
+      </class> <!-- MavenDemo.endToEnd -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

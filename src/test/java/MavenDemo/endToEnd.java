@@ -1,4 +1,6 @@
 package MavenDemo;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -31,7 +33,7 @@ public class endToEnd extends BaseTest{
 		//CartPage cartPage = new CartPage(driver);
 		
 		boolean match = cartPage.verifyProductDisplay(myProd);
-		Assert.assertTrue(match);
+		AssertJUnit.assertTrue(match);
 		
 		Payment payment = cartPage.clickCheckout();
 		
@@ -40,7 +42,7 @@ public class endToEnd extends BaseTest{
 		payment.placeOrder();
 		String confirmMessage = payment.getMessage();
 		System.out.println(confirmMessage);
-		Assert.assertTrue(confirmMessage.equalsIgnoreCase("Thankyou for the order."));
+		AssertJUnit.assertTrue(confirmMessage.equalsIgnoreCase("Thankyou for the order."));
 
 		//driver.close();
 	}
